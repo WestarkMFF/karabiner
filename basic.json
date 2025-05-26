@@ -416,6 +416,21 @@
           "from": { "key_code": "right_shift" },
           "to": [{ "key_code": "right_shift" }],
           "to_if_alone": [{ "key_code": "f15" }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": ["right_shift"]
+            },
+            "key_code": "n"
+          },
+          "to": [
+            {
+              "modifiers": ["left_shift"],
+              "key_code": "f2"
+            }
+          ]
         }
       ]
     },
