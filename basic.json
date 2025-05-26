@@ -455,6 +455,32 @@
           "to_if_alone": [{ "key_code": "f12" }]
         }
       ]
+    },
+    {
+      "description": "[iTerm2] Change Cmd+B to Alt+B in iTerm2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
