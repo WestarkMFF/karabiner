@@ -169,6 +169,16 @@
         },
         {
           "type": "basic",
+          "from": { "modifiers": { "mandatory": ["right_gui", "left_shift"] }, "key_code": "semicolon" },
+          "to": [{ "repeat": true, "key_code": "delete_or_backspace", "modifiers": ["left_shift"] }]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "delete_or_backspace" },
+          "to": [{ "repeat": true, "key_code": "delete_or_backspace", "modifiers": ["left_alt"] }]
+        },
+        {
+          "type": "basic",
           "from": { "modifiers": { "mandatory": ["right_gui", "left_gui"] }, "key_code": "semicolon" },
           "to": [{ "repeat": true, "key_code": "delete_or_backspace", "modifiers": ["left_gui"] }]
         },
@@ -488,13 +498,70 @@
           "from": {
             "key_code": "b",
             "modifiers": {
-              "mandatory": ["command"]
+              "mandatory": ["left_gui"]
             }
           },
           "to": [
             {
               "key_code": "b",
-              "modifiers": ["option"]
+              "modifiers": ["left_alt"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.googlecode\\.iterm2"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": ["left_alt", "left_shift"]
             }
           ],
           "conditions": [
