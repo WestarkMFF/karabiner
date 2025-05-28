@@ -79,7 +79,16 @@
           "from": { "modifiers": { "mandatory": ["right_gui"] }, "key_code": "s" },
           "to": [{ "repeat": true, "key_code": "close_bracket" }]
         },
-
+        {
+          "type": "basic",
+          "from": { "modifiers": { "mandatory": ["right_gui", "left_gui"] }, "key_code": "a" },
+          "to": [{ "repeat": true, "key_code": "open_bracket", "modifiers": ["left_gui"] }]
+        },
+        {
+          "type": "basic",
+          "from": { "modifiers": { "mandatory": ["right_gui", "left_gui"] }, "key_code": "s" },
+          "to": [{ "repeat": true, "key_code": "close_bracket", "modifiers": ["left_gui"] }]
+        },
         {
           "type": "basic",
           "from": { "modifiers": { "mandatory": ["right_gui"] }, "key_code": "open_bracket" },
