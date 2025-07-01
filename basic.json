@@ -524,7 +524,7 @@
       ]
     },
     {
-      "description": "[basic] Custom complex key",
+      "description": "[basic] Custom complex key, left shift map to f12",
       "manipulators": [
         {
           "type": "basic",
