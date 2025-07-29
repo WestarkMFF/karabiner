@@ -224,11 +224,6 @@
         },
         {
           "type": "basic",
-          "from": { "key_code": "delete_or_backspace" },
-          "to": [{ "repeat": true, "key_code": "delete_or_backspace", "modifiers": ["left_alt"] }]
-        },
-        {
-          "type": "basic",
           "from": { "modifiers": { "mandatory": ["right_gui", "left_gui"] }, "key_code": "semicolon" },
           "to": [{ "repeat": true, "key_code": "delete_or_backspace", "modifiers": ["left_gui"] }]
         },
@@ -618,6 +613,172 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": ["^com\\.googlecode\\.iterm2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[Neovide] Change Cmd+{b|p|s|d} to Alt+{b|p|s|d} in iTerm2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": ["left_gui"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": ["left_alt"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.neovide\\.neovide"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.neovide\\.neovide"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.neovide\\.neovide"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.neovide\\.neovide"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[Hyper] Change Cmd+{b|p|s|d} to Alt+{b|p|s|d} in iTerm2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": ["left_gui"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": ["left_alt"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^co\\.zeit\\.hyper"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^co\\.zeit\\.hyper"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^co\\.zeit\\.hyper"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": { "mandatory": ["left_gui"] }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": ["left_alt", "left_shift"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^co\\.zeit\\.hyper"]
             }
           ]
         }
