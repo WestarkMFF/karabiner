@@ -519,23 +519,6 @@
       ]
     },
     {
-      "description": "[basic] Custom complex key, left shift map to f12",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": { "key_code": "spacebar" },
-          "to": [{ "key_code": "left_control" }],
-          "to_if_alone": [{ "key_code": "spacebar" }]
-        },
-        {
-          "type": "basic",
-          "from": { "key_code": "left_shift" },
-          "to": [{ "key_code": "left_shift" }],
-          "to_if_alone": [{ "key_code": "f12" }]
-        }
-      ]
-    },
-    {
       "description": "[iTerm2] Change Cmd+B to Alt+B in iTerm2",
       "manipulators": [
         {
