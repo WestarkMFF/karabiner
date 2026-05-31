@@ -757,6 +757,19 @@
               "key_code": "f2"
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f18"
+          },
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "k",
+              "modifiers": ["left_control"]
+            }
+          ]
         }
       ]
     },
@@ -997,7 +1010,7 @@
       ]
     },
     {
-      "description": "[Hyper, iterm2] Change Cmd+{b|p|s|d} to Alt+{b|p|s|d} in Hyper",
+      "description": "[Hyper, iterm2, Wezterm] Change Cmd+{b|p|s|d} to Alt+{b|p|s|d} in Hyper",
       "manipulators": [
         {
           "type": "basic",
@@ -1018,7 +1031,8 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^co\\.zeit\\.hyper",
-                "^com\\.googlecode\\.iterm2"
+                "^com\\.googlecode\\.iterm2",
+                "^com\\.github\\.wez\\.wezterm"
               ]
             }
           ]

@@ -10,7 +10,7 @@
           "to": [{ "key_code": "left_shift" }],
           "to_if_alone": [
             {
-             "apple_vendor_top_case_key_code": "keyboard_fn"
+              "apple_vendor_top_case_key_code": "keyboard_fn"
             }
           ]
         }
@@ -24,9 +24,7 @@
           "from": {
             "key_code": "left_control",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -50,9 +48,7 @@
           "from": {
             "key_code": "left_command",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -76,9 +72,7 @@
           "from": {
             "key_code": "left_option",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -102,9 +96,7 @@
           "from": {
             "key_code": "right_control",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -128,9 +120,7 @@
           "from": {
             "key_code": "right_command",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -154,9 +144,7 @@
           "from": {
             "key_code": "right_alt",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -167,6 +155,45 @@
           "to_if_alone": [
             {
               "key_code": "f18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Disable Option special characters in VS Code",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": { "mandatory": ["left_option"] }
+          },
+          "to": [{ "key_code": "f19", "modifiers": ["left_shift"] }],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.microsoft.VSCodeInsiders",
+                "com.microsoft.VSCode"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": { "mandatory": ["left_option"] }
+          },
+          "to": [{ "key_code": "f20", "modifiers": ["left_shift"] }],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.microsoft.VSCodeInsiders",
+                "com.microsoft.VSCode"
+              ]
             }
           ]
         }
